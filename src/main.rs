@@ -22,6 +22,7 @@ fn main() {
     let mut now = Instant::now();
     println!("Reading input");
     // Read file at compile
+    // Maybe we can optimize this?
     let mut input = include_str!("../day5.txt").lines().collect::<Vec<_>>();
     // Reverse input to read commands backwards
     input.reverse();
